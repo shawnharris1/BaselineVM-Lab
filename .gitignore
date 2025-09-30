@@ -1,0 +1,22 @@
+# Ignore ISO files and installation media
+ISOs/
+*.iso
+
+# Ignore VM folders and virtual disks
+VMs/
+*.vhd
+*.vhdx
+
+# Ignore logs and teardown artifacts
+Logs/
+TeardownLogs/
+Exports/
+Snapshots/
+
+# Ignore PowerShell-generated temp files
+*.log
+*.tmp
+
+# Ignore system files
+Thumbs.db
+.DS_Store
