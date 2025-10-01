@@ -158,8 +158,7 @@ This lab supports a full learning lifecycle: **Provision → Snapshot → Config
 | Templates      | Role-based provisioning templates and README scaffolding |
 
 > Additional folders such as Backups/, Logs/, and Staging/ are scaffolded but currently empty.
- See [`Docs/RepoMap.md`](./Docs/RepoMap.md) for full structure.
-
+ 
 ---
 
 ## Educational Goals
