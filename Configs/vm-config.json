@@ -1,0 +1,14 @@
+[
+  {
+    "Name": "CustomClient01",
+    "ISO": "Win11_Enterprise.iso",
+    "MemoryMB": 4096,
+    "DiskGB": 60
+  },
+  {
+    "Name": "CustomServer01",
+    "ISO": "WinServer2022_Eval.iso",
+    "MemoryMB": 8192,
+    "DiskGB": 100
+  }
+]

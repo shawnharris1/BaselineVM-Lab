@@ -22,7 +22,7 @@ This document outlines planned features, certification modules, and long-term go
 
 ## Long-Term Goals
 
-- Build a full-featured toolkit for SC-300, CCSP, and related certs
+- Build a full-featured toolkit for SC-300, and related certs
 - Support community contributions and modular extensions
 - Create a versioned release system for lab snapshots and exports
 - Publish educational guides and video walkthroughs

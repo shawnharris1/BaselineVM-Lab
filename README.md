@@ -4,6 +4,14 @@ A modular, reproducible Hyper-V lab designed for security certification prep, en
 
 ---
 
+## Script Philosophy
+
+These scripts are built for clarity, reproducibility, and real learning.  
+Each one is modular, beginner-friendly, and aligned with certification-grade lifecycle hygiene.  
+Whether you're provisioning your first VM or automating teardown across dozens, this toolkit is designed to teach through transparency.
+
+---
+
 ## Quickstart (3 Steps)
 
 1. **Prepare your external SSD**
@@ -16,13 +24,99 @@ A modular, reproducible Hyper-V lab designed for security certification prep, en
      P:\BaselineVM\ISOs\
      ```
 
-3. **Run the provisioning script**
+3. **Run the provisioning and prep scripts**
    - Open PowerShell as Administrator
    - Navigate to `P:\BaselineVM\Scripts`
    - Run:
      ```powershell
-     .\Provision-BaselineVMs.ps1
+     .\HostPrep.ps1
+	 .\Provision-BaselineVMs.ps1
      ```
+
+---
+
+## Automation Coverage
+
+This lab includes PowerShell scripts for:
+
+- Host preparation and network optimization
+- VM provisioning with snapshot hygiene
+- Full teardown and cleanup
+- Future modules for snapshot rotation, menu-driven launchers, and log management
+
+---
+
+## Available Scripts
+
+### `HostPrep.ps1`
+  
+Automates host-side configuration before VM provisioning.
+
+**Tasks performed:**
+- Disables Large Send Offload v2 (IPv4/IPv6)
+- Validates presence of Hyper-V Default Switch
+- Supports dry-run mode via `-WhatIf`
+
+**Usage:**
+```powershell
+.\HostPrep.ps1
+```
+
+---
+
+### `Provision-BaselineVMs.ps1`
+
+Creates baseline virtual machines for SC-300 lab using Windows 11 and Server 2022 ISOs.
+
+**Tasks performed:**
+
+- Provisions Generation 2 VMs with predefined names and specs
+- Attaches ISO media and disables Secure Boot
+- Creates dynamic VHDs and configures VM firmware
+- Logs provisioning actions to Logs\ProvisionLog.txt
+- Supports snapshot hygiene and lifecycle reproducibility
+- For advanced provisioning with custom specs, see Provision-CustomVMs.ps1
+
+**Usage:**
+
+```powershell
+.\Provision-BaselineVMs.ps1
+```
+
+---
+
+### `Provision-CustomVMs.ps1`
+
+Provisions VMs dynamically using a JSON config file.
+
+**Tasks performed:**
+- Reads VM definitions from `Configs\vm-config.json`
+- Supports custom names, memory, disk size, and ISO mapping
+- Logs provisioning actions for auditability
+
+**Usage:**
+
+```powershell
+.\Provision-CustomVMs.ps1
+```
+
+---
+
+### `Teardown.ps1`
+
+Performs full lifecycle cleanup of lab resources.
+
+**Tasks performed:**
+
+- Deletes VMs and associated checkpoints
+- Removes virtual hard disks and switches
+- Logs teardown actions to TeardownLogs\TeardownLog.txt
+
+**Usage:**
+
+```powershell
+.\Teardown.ps1
+```
 
 ---
 
@@ -41,6 +135,7 @@ A modular, reproducible Hyper-V lab designed for security certification prep, en
 
 This lab supports a full learning lifecycle: **Provision → Snapshot → Configure → Teardown → Reflect**
 
+- **Host Prep**: [`Scripts/HostPrep.ps1`](./Scripts/HostPrep.ps1)
 - **Provisioning**: [`Scripts/Provision-BaselineVMs.ps1`](./Scripts/Provision-BaselineVMs.ps1)
 - **Snapshot**: Documented in [`Docs/CleanBaseline.md`](./Docs/CleanBaseline.md)
 - **Configuration**: Tracked in [`Docs/SetupNotes.md`](./Docs/SetupNotes.md)
@@ -91,15 +186,15 @@ See [`Docs/ROADMAP.md`](./Docs/ROADMAP.md) for planned features, cert prep modul
 
 ---
 
-## Lab Philosophy
-
-This lab is built for real learning. It supports a full lifecycle approach to virtual machines including provisioning snapshot configuration teardown and reflection  
-The goal is to create a space where you can experiment safely and repeat steps with confidence. Every folder and script is designed to help you understand what you're doing and why it matters  
-I'm using this lab to learn too. I'm working through SC-300 and related certifications and rebuilt this from scratch to make it cleaner and easier to teach. I document mistakes and fixes so others can follow along and learn from them  
-If you're new to PowerShell Hyper-V or certification prep this lab is for you. If you're experienced and want to contribute or adapt it you're welcome here too
-
----
-
 ## Lifecycle Flowchart
 
 ![VM Lifecycle Flowchart](./Docs/vm-lifecycle.png)
+
+---
+
+## Contributing
+
+This lab is designed to grow with its users.  
+If you'd like to suggest improvements, contribute scripts, or adapt it for other certifications, feel free to fork, clone, or open a pull request.  
+All contributions that improve clarity, reproducibility, or learner experience are welcome.
+

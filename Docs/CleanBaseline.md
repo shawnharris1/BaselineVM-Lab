@@ -5,6 +5,12 @@ markdown
 
 This document outlines how to preserve a clean, reusable snapshot of your baseline VMs after provisioning.
 
+## Snapshot vs. Export
+
+- Snapshots are Hyper-V checkpoints stored locally.  
+- Exports are full VM copies saved externally for backup or sharing.
+
+
 ## Why Snapshot?
 
 Creating a snapshot immediately after provisioning allows you to:
@@ -20,6 +26,25 @@ Take a snapshot after:
 - Running `Provision-BaselineVMs.ps1`
 - Verifying VM boot and ISO installation
 - Confirming network connectivity and switch assignment
+
+## Before You Snapshot
+
+- Confirm VM boots cleanly and matches intended role
+- Apply any required baseline hardening (e.g., SC-300 prep)
+- Ensure VM is not joined to a domain unless intended
+- Remove temporary files or setup artifacts
+- Before snapshotting, ensure no sensitive credentials or lab secrets are stored in plaintext.
+
+## Snapshot Checklist
+
+Use this checklist to verify your VM is clean, functional, and ready for snapshotting
+
+- [ ] VM boots cleanly
+- [ ] ISO installation verified
+- [ ] Network switch assigned
+- [ ] Baseline hardening applied (if applicable)
+- [ ] Temporary files removed
+- [ ] Snapshot named using convention
 
 ## Snapshot Naming Convention
 
