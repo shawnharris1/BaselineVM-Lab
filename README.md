@@ -206,9 +206,7 @@ See [`Docs/ROADMAP.md`](./Docs/ROADMAP.md) for planned features, cert prep modul
 
 
 ---
-
 ## License
 
 This project is licensed under the [MIT License](./LICENSE).
-
 
