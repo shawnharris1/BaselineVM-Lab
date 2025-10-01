@@ -171,6 +171,13 @@ This lab supports a full learning lifecycle: **Provision → Snapshot → Config
 
 ---
 
+## Additional Documentation
+
+- [RepoMap.md](Docs/RepoMap.md): Explains folder structure and lifecycle roles  
+- [RepoHygiene.md](Docs/RepoHygiene.md): Details exclusions, backup strategy, and `.gitignore` logic
+
+---
+
 ## Common Errors & Fixes
 
 See [`Docs/README.md`](./Docs/README.md) for a full walkthrough and troubleshooting guide.
