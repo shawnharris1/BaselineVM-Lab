@@ -199,8 +199,16 @@ See [`Docs/ROADMAP.md`](./Docs/ROADMAP.md) for planned features, cert prep modul
 ## Contributing
 
 > This lab is designed to grow with its users.
-  
-> If you'd like to suggest improvements, contribute scripts, or adapt it for other certifications, feel free to fork, clone, or open a pull request.  
 
 > All contributions that improve clarity, reproducibility, or learner experience are welcome.
+
+> If you'd like to suggest improvements, contribute scripts, or adapt it for other certifications, feel free to fork, clone, or open a pull request.  
+
+
+---
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE).
+
 
