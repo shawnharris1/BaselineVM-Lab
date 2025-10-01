@@ -146,21 +146,18 @@ This lab supports a full learning lifecycle: **Provision → Snapshot → Config
 
 ## Folder Structure
 
-| Folder           | Purpose                                                  |
-|------------------|----------------------------------------------------------|
-| `Scripts`        | Provisioning and teardown scripts                        |
-| `ISOs`           | Windows installation media                               |
-| `VMs`            | Active VM folders and VHDs                               |
-| `Logs`           | Provisioning logs and rotation history                   |
-| `TeardownLogs`   | Teardown logs and human-readable summaries               |
-| `Docs`           | Setup notes, snapshots, cert prep documentation          |
-| `Configs`        | Exported VM config files or custom settings              |
-| `Snapshots`      | Manual or exported Hyper-V checkpoints                   |
-| `Backups`        | Manual or scripted VM backups                            |
-| `Staging`        | Temporary files or pre-deployment assets                 |
-| `Exports`        | Exported VMs for sharing or rollback                     |
-| `Templates`      | Reusable VM templates or preconfigured roles             |
-| `CertPrep`       | SC-300 exercises and artifacts                           |
+| Folder         | Purpose                                                  |
+|----------------|----------------------------------------------------------|
+| CertPrep       | SC-300 exercises, artifacts, and certification prep      |
+| Configs        | VM specs, provisioning parameters, and role definitions  |
+| Docs           | Setup notes, lifecycle diagrams, troubleshooting logs    |
+| Exports        | Exported configs or assets for sharing or rollback       |
+| Scripts        | PowerShell automation for provisioning and teardown      |
+| Snapshots      | Metadata or notes about Hyper-V checkpoints              |
+| TeardownLogs   | Logs from teardown runs, useful for auditing             |
+| Templates      | Role-based provisioning templates and README scaffolding |
+
+> Additional folders such as Backups/, Logs/, and Staging/ are scaffolded but currently empty. See [`Docs/RepoMap.md`](./Docs/RepoMap.md) for full structure.
 
 ---
 
