@@ -173,8 +173,8 @@ This lab supports a full learning lifecycle: **Provision → Snapshot → Config
 
 ## Additional Documentation
 
-See [RepoMap.md](./Docs/RepoMap.md): Explains folder structure and lifecycle roles  
-See [RepoHygiene.md](./Docs/RepoHygiene.md): Details exclusions, backup strategy, and `.gitignore` logic
+See [`RepoMap.md`](./Docs/RepoMap.md): Explains folder structure and lifecycle roles  
+See [`RepoHygiene.md`](./Docs/RepoHygiene.md): Details exclusions, backup strategy, and `.gitignore` logic
 
 ---
 
