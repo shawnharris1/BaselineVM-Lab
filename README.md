@@ -157,7 +157,8 @@ This lab supports a full learning lifecycle: **Provision → Snapshot → Config
 | TeardownLogs   | Logs from teardown runs, useful for auditing             |
 | Templates      | Role-based provisioning templates and README scaffolding |
 
-> Additional folders such as Backups/, Logs/, and Staging/ are scaffolded but currently empty. See [`Docs/RepoMap.md`](./Docs/RepoMap.md) for full structure.
+> Additional folders such as Backups/, Logs/, and Staging/ are scaffolded but currently empty.
+ See [`Docs/RepoMap.md`](./Docs/RepoMap.md) for full structure.
 
 ---
 
@@ -173,8 +174,8 @@ This lab supports a full learning lifecycle: **Provision → Snapshot → Config
 
 ## Additional Documentation
 
-See [`RepoMap.md`](./Docs/RepoMap.md): Explains folder structure and lifecycle roles  
-See [`RepoHygiene.md`](./Docs/RepoHygiene.md): Details exclusions, backup strategy, and `.gitignore` logic
+See [`RepoMap.md`](./Docs/RepoMap.md) explains folder structure and lifecycle roles  
+See [`RepoHygiene.md`](./Docs/RepoHygiene.md) details exclusions, backup strategy, and `.gitignore` logic
 
 ---
 
@@ -198,7 +199,9 @@ See [`Docs/ROADMAP.md`](./Docs/ROADMAP.md) for planned features, cert prep modul
 
 ## Contributing
 
-This lab is designed to grow with its users.  
-If you'd like to suggest improvements, contribute scripts, or adapt it for other certifications, feel free to fork, clone, or open a pull request.  
-All contributions that improve clarity, reproducibility, or learner experience are welcome.
+> This lab is designed to grow with its users.
+  
+> If you'd like to suggest improvements, contribute scripts, or adapt it for other certifications, feel free to fork, clone, or open a pull request.  
+
+> All contributions that improve clarity, reproducibility, or learner experience are welcome.
 
