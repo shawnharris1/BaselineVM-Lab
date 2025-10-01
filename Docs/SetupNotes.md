@@ -28,7 +28,7 @@ This document tracks all manual configuration steps applied to baseline VMs afte
 - [ ] Run `scripts/HostPrep.ps1` to automate host tweaks (e.g., disable LSO v2, validate Hyper-V switch)
 
 
-> For known VM and network issues, see [Troubleshooting.md](../Troubleshooting.md)
+> For known VM and network issues, see [Troubleshooting.md](./Troubleshooting.md)
 
 ---
 
