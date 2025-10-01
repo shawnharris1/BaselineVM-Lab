@@ -65,5 +65,5 @@ Run `scripts/HostPrep.ps1` to automate this tweak:
 ```
 
 ## Related Docs
-- [Setup Notes](../SetupNotes.md)
-- [ROADMAP.md](../ROADMAP.md)
+- [Setup Notes](./SetupNotes.md)
+- [ROADMAP.md](./ROADMAP.md)
