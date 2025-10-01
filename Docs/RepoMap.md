@@ -38,6 +38,6 @@ This document maps the purpose of each folder in the `BaselineVM` repo, aligned 
 ## Notes
 
 - VM and ISO files are excluded from the repo for size and lifecycle hygiene.  
-- See [`Docs/RepoHygiene.md`] (`Docs/RepoHygiene.md`) for backup strategy and `.gitignore` logic.  
+- See [`./RepoHygiene.md`] (`./RepoHygiene.md`) for backup strategy and `.gitignore` logic.  
 - For changelog and milestone tracking, see [`CHANGELOG.md`](`../CHANGELOG.md`) in the root folder.
 
